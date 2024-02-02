@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background: url(./bg.webp) center/cover no-repeat;
+  height: 100vh;
+  
+  font-family: 'Outfit', sans-serif;
+}
+
+
+
+
+.hometxt{
+  z-index: 1 !important;
+  padding-top: 7rem !important;
+}
+.hometxt h1{
+  font-size: 4rem !important;
+  padding-bottom: 1rem !important;
+}
+.hometxt p{
+  padding-bottom: 1.5rem !important;
+}
+.custom-button {
+  margin-top: 20px;
+}
+
+
+
+@media(max-width: 991px){
+  .sidebar{
+    background-color: rgba(0, 0, 0, 0.15) !important;
+    backdrop-filter: blur(10px);
+  }
+ 
+  
+}
