@@ -1,22 +1,25 @@
+
 body {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  background: url(./bg.webp) center/cover no-repeat;
-  height: 100vh;
-  
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: black !important;
   font-family: 'Outfit', sans-serif;
 }
 
+p{
+  color: rgb(110, 110, 107) !important;
+}
 
-
+.navbar{
+  z-index: 99999 !important;
+}
 
 .hometxt{
   z-index: 1 !important;
-  padding-top: 7rem !important;
+  padding-top: 12rem !important;
 }
 .hometxt h1{
-  font-size: 4rem !important;
+  font-size: 4.5rem !important;
   padding-bottom: 1rem !important;
 }
 .hometxt p{
@@ -25,14 +28,40 @@ body {
 .custom-button {
   margin-top: 20px;
 }
-
+.abouttxt{
+  z-index: 2 !important;
+  padding-top: 6rem !important;
+}
+.abouttxt h3{
+  padding-top: 7rem !important;
+  padding-bottom: 2rem !important;
+  font-size: 3rem !important;
+  
+}
 
 
 @media(max-width: 991px){
   .sidebar{
-    background-color: rgba(0, 0, 0, 0.15) !important;
+    background-color: rgba(255, 255, 255, 0.062) !important;
     backdrop-filter: blur(10px);
   }
- 
+  #about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100% !important;
+  }
   
+  .abouttxt {
+    text-align: center;
+ 
+  }
+
+  .abouttxt h3{
+    padding-top: 2rem !important;
+    padding-bottom: 0.5rem !important;
+    font-size: 3rem !important;
+    
+  }
 }
+
