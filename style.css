@@ -14,9 +14,24 @@ p{
   z-index: 99999 !important;
 }
 
+
+#home {
+  background-image: url('./bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
 .hometxt{
   z-index: 1 !important;
-  padding-top: 12rem !important;
+  padding-top: 2rem !important;
 }
 .hometxt h1{
   font-size: 4.5rem !important;
