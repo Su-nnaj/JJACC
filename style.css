@@ -2,12 +2,23 @@
 body {
   margin: 0 !important;
   padding: 0 !important;
-  background-color: black !important;
+  background-color: rgb(255, 255, 255) !important;
   font-family: 'Outfit', sans-serif;
+  
+}
+
+.navbar {
+  transition: background-color 0.3s ease !important;
+}
+
+
+
+.backgroundColor {
+  background-color:  rgb(5, 157, 204)!important;
 }
 
 p{
-  color: rgb(110, 110, 107) !important;
+  color: rgba(22, 22, 22, 0.699) !important;
 }
 
 .navbar{
@@ -27,11 +38,14 @@ p{
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .hometxt{
   z-index: 1 !important;
   padding-top: 2rem !important;
+}
+.hometxt p{
+  color: rgba(255, 255, 255, 0.753) !important;
 }
 .hometxt h1{
   font-size: 4.5rem !important;
@@ -43,13 +57,23 @@ p{
 .custom-button {
   margin-top: 20px;
 }
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Adjust as needed */
+  
+}
+
+
+
+
 .abouttxt{
   z-index: 2 !important;
-  padding-top: 6rem !important;
+ 
 }
 .abouttxt h3{
-  padding-top: 7rem !important;
-  padding-bottom: 2rem !important;
   font-size: 3rem !important;
   
 }
@@ -60,15 +84,18 @@ p{
     background-color: rgba(255, 255, 255, 0.062) !important;
     backdrop-filter: blur(10px);
   }
+ 
   #about {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100% !important;
+    padding-bottom: 2rem !important;
   }
   
   .abouttxt {
     text-align: center;
+    padding-top: 2rem !important;
  
   }
 
