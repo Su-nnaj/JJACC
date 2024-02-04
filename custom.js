@@ -1,3 +1,85 @@
+/* app.js */
+
+var app = function () {
+  var customHeader = undefined;
+  var menu = undefined;
+  var menuItems = undefined;
+  var init = function init() {
+      customHeader = document.querySelector('.custom-header');
+      menu = document.querySelector('.menu-icon');
+      menuItems = document.querySelectorAll('.nav__list-item');
+      applyListeners();
+  };
+  var applyListeners = function applyListeners() {
+      menu.addEventListener('click', function () {
+          toggleClass(customHeader, 'nav-active');
+      });
+
+      // Close the menu when a menu item is clicked
+      menuItems.forEach(function (menuItem) {
+          menuItem.addEventListener('click', function () {
+              customHeader.classList.remove('nav-active');
+          });
+      });
+  };
+  var toggleClass = function toggleClass(element, stringClass) {
+      if (element.classList.contains(stringClass)) element.classList.remove(stringClass);
+      else element.classList.add(stringClass);
+  };
+  init();
+}();
+
+
+
+
+
+
+
+
+// JavaScript for Cursor
+document.getElementsByTagName("body")[0].addEventListener("mousemove", function (n) {
+  cursor.style.left = n.clientX + "px";
+  cursor.style.top = n.clientY + "px";
+  cursor2.style.left = n.clientX + "px";
+  cursor2.style.top = n.clientY + "px";
+  cursor3.style.left = n.clientX + "px";
+  cursor3.style.top = n.clientY + "px";
+});
+
+var cursor = document.getElementById("cursor");
+var cursor2 = document.getElementById("cursor2");
+var cursor3 = document.getElementById("cursor3");
+
+function cursorHover() {
+  cursor2.classList.add("hover");
+  cursor3.classList.add("hover");
+}
+
+function cursorUnhover() {
+  cursor2.classList.remove("hover");
+  cursor3.classList.remove("hover");
+}
+
+cursorUnhover();
+
+var hoverTargets = document.querySelectorAll(".hover-target");
+
+hoverTargets.forEach(function (target) {
+  target.addEventListener("mouseover", cursorHover);
+  target.addEventListener("mouseout", cursorUnhover);
+});
+
+
+
+
+
+
+
+
+
+
+
+
 (function ($) {
 	
 	"use strict";
