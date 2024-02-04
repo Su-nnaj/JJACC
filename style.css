@@ -1186,60 +1186,88 @@ Portfolio
 --------------------------------------------- 
 */
 
-.our-portfolio {
-  padding-top: 100px;
-  overflow: hidden;
+
+.portfolio h1{
+  font-size: 2rem;
+  color: white;
+  padding-bottom: 2.5rem;
+}
+.portfolio span{
+  font-size: 1.4rem;
 }
 
-.our-portfolio .container-fluid {
-  padding-right: 0px;
-  padding-left: 0px;
-}
 
-
-.portfolio-item .thumb .hover-content .inner-content h4 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-
-.portfolio-item .thumb .hover-content .inner-content span {
-  font-size: 15px;
-  color: #fff;
-}
-
-.our-portfolio .owl-nav {
-  display: inline-block!important;
-  position: absolute;
-  top: -117px;
-  right: 15%;
-  max-width: 1320px;
-}
-
-.our-portfolio .owl-nav .owl-next {
-  margin-left: 10px;
-}
-
-.our-portfolio .owl-nav span {
-  width: 46px;
-  height: 46px;
-  display: inline-block;
-  text-align: center;
-  line-height: 35px;
-  font-size: 30px;
-  border: 2px solid #eee;
+.portfolio img {
   border-radius: 50%;
-  color: #ddd;
-  transition: all 0.5s;
+  width: clamp(100px, 40vw, 120px);
+  height: clamp(100px, 40vw, 120px);
+  object-fit: cover;
+  object-position: top;
 }
 
-.our-portfolio .owl-nav span:hover {
+.portfolio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+  margin-inline: auto;
+  gap: 0.938rem;
+  transform: translatey(-3em);
+  position: relative;
+  z-index: 10;
+  padding-top: 8rem;
+  
+ 
+}
+.portfolio .card {
+  padding: 1.875em 1.25em;
+  max-width: 18.75rem;
+  width: 90%;
+  height: 16.875rem;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  text-align: center;
+  position: relative;
+  background-color: transparent;
+}
+.portfolio .card::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  z-index: -1;
+  border: 0.125rem solid transparent;
+  background: linear-gradient(45deg, #eef8ff, #b4b4b4) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+.portfolio .card h2 {
   color: #ffffff;
-  border-color: #33ccc5;
+  letter-spacing: 0.05rem;
+  font-size: clamp(1rem, 0.9375rem + 0.3125vw, 1.25rem);
+  margin-top: 0.625em;
+  margin-bottom: 0.188em;
 }
-
-
+.portfolio .card p {
+  color: #afafaf;
+  font-size: clamp(0.8rem, 0.7625rem + 0.1875vw, 0.95rem);
+}
+.portfolio .card-top {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.938rem;
+  flex-wrap: wrap;
+}
+.portfolio .card-top .card img {
+  width: clamp(7.5rem, 40vw, 9.375rem);
+  height: clamp(7.5rem, 40vw, 9.375rem);
+}
 
 /* 
 ---------------------------------------------
