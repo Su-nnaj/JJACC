@@ -967,11 +967,11 @@ Features Style
 }
 
 .first-feature:hover .icon {
-  background-image: url(../features-icon-white-01.png);
+  background-image: url(./features-icon-black-01.png);
 }
 
 .second-feature:hover .icon {
-  background-image: url(../features-icon-white-02.png);
+  background-image: url(./features-icon-black-02.png);
 }
 
 .features-item .number h6 {
@@ -990,27 +990,27 @@ Features Style
 }
 
 .features-item .first-number h6 {
-  background-image: url(../features-number-01.png);
+  background-image: url(./features-number-01.png);
 }
 
 .features-item .second-number h6 {
-  background-image: url(../features-number-02.png);
+  background-image: url(./features-number-02.png);
 }
 
 .features-item .third-number h6 {
-  background-image: url(../features-number-03.png);
+  background-image: url(./features-number-03.png);
 }
 
 .features-item .fourth-number h6 {
-  background-image: url(../features-number-04.png);
+  background-image: url(./features-number-04.png);
 }
 
 .first-feature .icon {
-  background-image: url(../features-icon-black-01.png);
+  background-image: url(./features-icon-black-01.png);
 }
 
 .second-feature .icon {
-  background-image: url(../features-icon-black-02.png);
+  background-image: url(./features-icon-black-02.png);
 }
 
 .features-item .icon {
@@ -1343,12 +1343,26 @@ Services Style
   margin-top: 10px;
   width: 80px;
   height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+  text-align: center;
+  line-height: 80px;
   background-color: #f7f7f7;
   border-radius: 50%;
+
 }
+
+.service-item .icon img {
+  width: 50% !important;
+  height: auto !important;
+  
+}
+
+
+.service-item .icon img {
+  width: 50%; /* Adjust the size of the image */
+  height: auto; /* Maintain the aspect ratio */
+}
+
 
 .service-item .icon img {
   width: 38px;
@@ -1479,10 +1493,13 @@ responsive
   }
   .service-item {
     text-align: center;
+    
   }
   .service-item .icon {
     margin-top: 0px;
     margin-bottom: 30px;
+    
+    
   }
   .about-us .left-image {
     margin-right: 30px;
